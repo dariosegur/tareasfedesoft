@@ -6,13 +6,9 @@
         <!--Estos estilos son de trabajo-->
         <style>
             aside>section>img{width: 5%;}
-            article>section{
-                width: 50%;
-                float:left;
-            }
             .aqui{
-                background-color: aqua;
-                background-image: "/images/hero-aeon.ba0c3520.svg";
+                background-color: red;
+                background-image: url("/images/wood-cookie--modulos.35666bc5.svg")
             }
             footer>img{
                 width: 10%;
@@ -25,11 +21,14 @@
             article{background-color:gray;}
             footer{background-color: blue}
             nav>a{border: solid}
+            article>section{
+                width: 50%;
+                float:left;
+            }
         </style>
     </head>
     <body>
         <header>
-            <div class="aqui" width="100px" height="100px" >hola</div>
             <nav>
                 <a>Modules</a>
                 <a>Legs</a>
@@ -65,8 +64,8 @@
             </nav>
         </header>
         <article>
-                <img width="50px" src="images/wood-cookie--modulos.35666bc5.svg"/>
-                <section style="background-image:'images/wood-cookie--modulos.35666bc5.svg'"> 
+                <!-- <img width="50px" src="images/wood-cookie--modulos.35666bc5.svg"/> -->
+                <section class="aqui"> 
                 <h2>
                     Antibacterial. Resistant. <br>A desk like no other.
                 </h2>
