@@ -1,0 +1,142 @@
+body{
+    font-family: "Muli", sans-serif;
+}
+a:hover{
+    cursor: pointer;
+}
+/* Configuración del menu de la página*/
+header>nav{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; 
+}
+header>nav>a{
+    display: block;
+    padding: 1.07143rem;
+    margin: 0.71429rem;
+    color: #43525A;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+header>nav>a:hover{
+    padding-top: 0.5rem;
+    color: rgb(0, 153, 255);
+    cursor: pointer;
+}
+header>nav>div{
+    background-color:#43525A; 
+    min-width: 1px;
+    width: 1px;
+    height: 5%;
+}
+header>nav>a>img{
+    width: 100%;
+}
+
+header>nav>a>svg{
+    width: 20px;
+    height: 10px;
+}
+
+/* Configuración del la información principal de la página */
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+article input[type="button"]{
+    background-color: #28A5BE;
+    color: white;
+    font-weight: 600;
+    margin: 1.42857rem 0 0;
+    padding: 1.07143rem 2.14286rem;
+    font-size: 1.14286rem;
+    border: none;
+    transition-property: 'background-color';
+    transition-duration: 0.3s;
+}
+article input[type="button"]:hover{
+    background-color: rgb(7, 65, 85);
+    cursor: pointer;
+}
+article>section{
+    width: 50%;
+    min-width: 400px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+article>section>h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+article>section>p{
+    font-weight: 400;
+    font-size: 1.14286rem;
+}
+article>section>p>em{
+    font-weight: 700;
+    font-size: 1.71429rem;
+    font-style: unset;
+}
+article>section:nth-child(1){
+    color:#D7F8FF;
+    background-image: url("../img/hero-aeon.ba0c3520.png"),linear-gradient(270deg,#000000, #222222);
+}
+article>section:nth-child(2){
+    color:#43525A;
+    background-image: url("../img/hero-heritage.png"),linear-gradient(270deg,#DDE3E7, #DDE3E7);
+    text-align: end;
+}
+
+/* Pie de página de la página */
+body>footer>img{
+    width: 10%;
+}
+
+body>footer{
+    display: flex;
+    flex-direction: row;
+}
+
+body>footer>div{
+    min-width: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+footer{
+    font-size: 10;
+}
+body>footer>div>a:hover{
+    text-decoration: underline #28A5BE;
+    color: #28A5BE;
+}
+
+/* Configuración de la información relacionada con la página */
+aside>section>img{width: 3%;}
+aside {
+    visibility: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 80%;
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 25%;
+    left: 100px;
+}
